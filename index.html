@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi primer PortFolio Web</title>
+  <!--Fuentes-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+  <!--Fontawesone-->
+  <script src="https://kit.fontawesome.com/37f493932d.js" crossorigin="anonymous"></script>
+  <!--Css bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <!--Mi CSS-->
+  <link rel="stylesheet" type="text/css" href="asset/css/style.css">
+</head>
+
+<!--Aca puse un fondo de color-->
+
+<body class="fondo">
+
+  <!--Empieza la navbar-redes sociales-->
+  <nav class="navbar navbar-expand-lg bg-navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="asset/images/Logos inti y argentina programa.png" alt="Logo de Argentina Programa">
+      </a>
+    </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto lg-12 mb-2">
+        <!--Primer item de red soial-github-->
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#"><i class="fa-brands fa-github"></i>
+          </a>
+          <!--Segundo item de red social-Linkedin-->
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fa-brands fa-linkedin"></i>
+          </a>
+        </li>
+        <!--Tercer item de red social-Faceboock-->
+        <li class="nav-item">
+          <a class="nav-link"><i class="fa-brands fa-facebook"></i></a>
+        </li>
+
+        <!--Quinto item de Login-->
+        <div class="dropdown">
+          <button class="btn btn-secondary" type="button"> Login
+          </button>
+        </div>
+        <!--modal de modificar-->
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+          <i class="fa-solid fa-pencil"></i>
+          <!--modal de eliminar-->
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+            <i class="fa-solid fa-trash"></i>
+          </button>
+      </ul>
+    </div>
+  </nav>
+  <!--Fin navbar-->
+
+
+  <!--Aca va la imagen del banner-->
+  <section>
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="banner">
+          <img src="asset/images/imagen banner 2.jpg"
+            alt="imagen banner profesionales trabajando entre una pantalla y el cliente">
+          <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+            <p>Johana Redondo <br><br>Full Stack Developer Jr.</p></br>
+
+          </div>
+        </div>
+      </div>
+  </section>
+  <!--Fin banner-->
+
+  <div class="container-acerca-de-mi">
+    <img src="asset/images/foto de perfil.jpg" class="rounded mx-auto d-block" alt="foto-perfil" width="220px"
+      height="220px" class="img-fluid">
+    <span>
+      <h3>Acerca de mí</h3>
+      <div class="col-xs-12 col-sm-08 col-md-8 col-lg-8">
+        <p class="info-sobre-mi">Soy una persona proactiva, excelente compañera de equipo, organizada y responsable.
+          Siento mucho interés por la programación ,administración y la capacitación constante. Disfruto mucho
+          aprender cosas nuevas, por lo que mi objetivo es un puesto desafiante y dinámico donde poder
+          compartir mi experiencia y a su vez crecer profesionalmente. </p>
+    </span>
+  </div>
+  </div>
+
+  <!-- Educación -->
+
+  <div class="container text-center">
+    <div class="row align-items-start">
+      <div class="educacion"></div>
+      <h2>Mi ducación</h2>
+      <div class="col">
+        <div class="estudio-posgrado"></div>
+        <img src="asset/images/MINIATURA-ARGEPROGR.jpg" alt="Logo de la Universidad Autonoma de Entre Ríos">
+        <h5 class="educacion-titulo">Full Stack Developer Jr</h5>
+        <p>Argentina Programa-INTI</p>
+        <h5 class="educacion-año">2023</h5>
+      </div>
+      <div class="col">
+        <div class="estudio-universitario"></div>
+        <img src="asset/images/UADER fcg.jpg" alt="Logo de la Universidad Autonoma de Entre Ríos">
+        <h5 class="educacion-titulo">Técnica Archivera</h5>
+        <p>Universidad Autónoma de Entre Ríos</p>
+        <h5 class="educacion-año">2021</h5>
+      </div>
+      <div class="col">
+        <div class="estudio-secundario"></div>
+        <img src="asset/images/Esc.Rep.EntreRios.png" alt="Logo de la escuela República de Entre Ríos">
+        <h5 class="educacion-titulo">Nivel Polimodal en</h5>
+        <p>Escuela República de Entre Ríos</p>
+        <h5 class="educacion-año">2005</h5>
+      </div>
+    </div>
+  </div>
+  <!-- Fin Educación -->
+
+
+  <!--Inicio de mi experiencia laboral-->
+  <div id="mi-experiencia-laboral">
+    <h2>Mi experiencia laboral</h2>
+    <div class="container text-fluid">
+      <div class="row align-items-start">
+        <div class="col-lg-4 col-md-8 col-sm-08 col-xs-12">
+          <h5>Heladería Artesanal <br>"La Valenciana"</h5>
+          <em>Oct 2013-a la fecha</em>
+          <ul>
+            <li>Atención al público; caja; uso de posnet, facturación</li>
+            <li>Control de stock y reposición</li>
+            <li>Toma de pedidos, atención venta por menor y por mayor</li>
+          </ul>
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+            <i class="fa-solid fa-pencil"></i>
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+              <i class="fa-solid fa-trash"></i>
+            </button>
+        </div>
+        <div class="col-lg-4">
+          <h5>Heladería Artesanal <br>"La Valenciana"</h5>
+          <em>Oct 2013-a la fecha</em>
+          <ul>
+            <li>Atención al público; caja; uso de posnet, facturación</li>
+            <li>Control de stock y reposición</li>
+            <li>Toma de pedidos, atención venta por menor y por mayor</li>
+          </ul>
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+            <i class="fa-solid fa-pencil"></i>
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+              <i class="fa-solid fa-trash"></i>
+            </button>
+
+        </div>
+        <div class="col-lg-4">
+          <h5>Heladería Artesanal <br>"La Valenciana"</h5>
+          <em>Oct 2013-a la fecha</em>
+          <ul>
+            <li>Atención al público; caja; uso de posnet, facturación</li>
+            <li>Control de stock y reposición</li>
+            <li>Toma de pedidos, atención venta por menor y por mayor</li>
+          </ul>
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+            <i class="fa-solid fa-pencil"></i>
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+              <i class="fa-solid fa-trash"></i>
+            </button>
+        </div>
+      </div>
+    </div>
+    <div class="container text-fluid">
+      <div class="row align-items-start">
+        <div class="col-lg-4">
+          <h5>Heladería Artesanal <br>"La Valenciana"</h5>
+          <em>Oct 2013-a la fecha</em>
+          <ul>
+            <li>Atención al público; caja; uso de posnet, facturación</li>
+            <li>Control de stock y reposición</li>
+            <li>Toma de pedidos, atención venta por menor y por mayor</li>
+          </ul>
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+            <i class="fa-solid fa-pencil"></i>
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+              <i class="fa-solid fa-trash"></i>
+            </button>
+        </div>
+        <div class="col-lg-4">
+          <h5>Heladería Artesanal <br>"La Valenciana"</h5>
+          <em>Oct 2013-a la fecha</em>
+          <ul>
+            <li>Atención al público; caja; uso de posnet, facturación</li>
+            <li>Control de stock y reposición</li>
+            <li>Toma de pedidos, atención venta por menor y por mayor</li>
+          </ul>
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+            <i class="fa-solid fa-pencil"></i>
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+              <i class="fa-solid fa-trash"></i>
+            </button>
+        </div>
+        <div class="col-lg-4">
+          <h5>Heladería Artesanal <br>"La Valenciana"</h5>
+          <em>Oct 2013-a la fecha</em>
+          <ul>
+            <li>Atención al público; caja; uso de posnet, facturación</li>
+            <li>Control de stock y reposición</li>
+            <li>Toma de pedidos, atención venta por menor y por mayor</li>
+          </ul>
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+            <i class="fa-solid fa-pencil"></i>
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+              <i class="fa-solid fa-trash"></i>
+            </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--Fin de mi experiencia laboral-->
+
+  <!--Inicio de mis hard & soft skills-->
+  <div class="fondo-skills">
+    <h2>Mis habilidades</h2>
+  <div class="habilidades-duras">
+   <em>Hard skills</em>
+    <p>HTML</p>
+    <div class="container"></div>
+    <div class="skills html">90%</div>
+    <!--modal de modificar-->
+    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+      <i class="fa-solid fa-pencil"></i>
+    </button>
+    <!--modal de eliminar-->
+    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+      <i class="fa-solid fa-trash"></i>
+    </button>
+    <p>CSS</p>
+    <div class="container"></div>
+    <div class="skills css">50%</div>
+       <!--modal de modificar-->
+       <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+        <i class="fa-solid fa-pencil"></i>
+        <!--modal de eliminar-->
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+          <i class="fa-solid fa-trash"></i>
+        </button>
+    <p>JAVASCRIPT</p>
+    <div class="container"></div>
+    <div class="skills javascript">10%</div>
+  <div>
+    <!--modal de modficar-->
+    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+      <i class="fa-solid fa-pencil"></i>
+      <!--modal de eliminar-->
+      <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+        <i class="fa-solid fa-trash"></i>
+      </button>
+    </div>
+  </div>
+  
+  <div class="habilidades-blandas">
+    <em>Soft skills</em>
+    <p>COMUNICACIÓN EFECTIVA</p>
+    <div class="container"></div>
+    <div class="skills comunicacion-efectiva">90%</div>
+    <!--modal de modificar-->
+    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+      <i class="fa-solid fa-pencil"></i>
+    </button>
+    <!--modal de eliminar-->
+    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+      <i class="fa-solid fa-trash"></i>
+    </button>
+    <p>AUTOGESTIÓN</p>
+    <div class="container"></div>
+    <div class="skills autogestion">50%</div>
+       <!--modal de modificar-->
+       <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+        <i class="fa-solid fa-pencil"></i>
+        <!--modal de eliminar-->
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+          <i class="fa-solid fa-trash"></i>
+        </button>
+    <p>TRABAJO EN EQUIPO</p>
+       <!--modal de modificar-->
+       <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+        <i class="fa-solid fa-pencil"></i>
+        <!--modal de eliminar-->
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+          <i class="fa-solid fa-trash"></i>
+        </button>
+    <div class="container"></div>
+    <div class="skills trabajo-en-equipo">10%</div>
+       <!--modal de modificar-->
+       <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+        <i class="fa-solid fa-pencil"></i>
+        <!--modal de eliminar-->
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+          <i class="fa-solid fa-trash"></i>
+        </button>
+    <p>CAPACIDAD ANALÍTICA</p>
+    <div class="container"></div>
+    <div class="skills capacidad-analitica">10%</div>
+  <div>
+    <!--modal de modficar-->
+    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+      <i class="fa-solid fa-pencil"></i>
+      <!--modal de eliminar-->
+      <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+        <i class="fa-solid fa-trash"></i>
+      </button>
+    </div>
+  </div>
+  </div>
+  <!--Fin de mis hard & soft skills-->
+
+  <!--Inicio de mis proyectos-->
+  <section>
+    <div id="mis-proyectos">
+      <h3>Mis proyectos</h3>
+      <div class="row row-cols-lg-2 row-cols-md-2 g-4">
+        <div class="row-cols-lg-">
+          <div class="card">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a
+                natural lead-in to additional content. This content is a little bit longer.
+              </p>
+              <!--modal de modificar-->
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+                <i class="fa-solid fa-pencil"></i>
+                <!--modal de eliminar-->
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+                  <i class="fa-solid fa-trash"></i>
+                </button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a
+                natural lead-in to additional content. This content is a little bit longer.
+              </p>
+              <!--modal de modificar-->
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+                <i class="fa-solid fa-pencil"></i>
+                <!--modal de eliminar-->
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+                  <i class="fa-solid fa-trash"></i>
+                </button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a
+                natural lead-in to additional content.This content is a little bit longer.
+              </p>
+              <!--modal de modificar-->
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+                <i class="fa-solid fa-pencil"></i>
+                <!--modal de eliminar-->
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+                  <i class="fa-solid fa-trash"></i>
+                </button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a
+                natural lead-in to additional content. This content is a little bit longer.
+              </p>
+              <!--modal de modificar-->
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+                <i class="fa-solid fa-pencil"></i>
+                <!--modal de eliminar-->
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+                  <i class="fa-solid fa-trash"></i>
+                </button>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!--Fin de mis proyectos-->
+
+  <footer id="footer">
+    <address>direccion</address>
+  </footer>
+
+
+
+
+
+
+  <!--JavaScript de Bootstrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  </div>
+</body>
+
+</html>
