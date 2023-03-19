@@ -52,10 +52,9 @@
         </li>
 
         <!--Quinto item de Login-->
-        <div class="dropdown">
-          <button class="btn btn-secondary" type="button"> Login
-          </button>
-        </div>
+        <li class="nav-item">
+          <a class="nav-link"><i class="fa-solid fa-user"></i></a>
+        </li>
         <!--modal de modificar-->
         <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
           <i class="fa-solid fa-pencil"></i>
@@ -73,44 +72,89 @@
   <section>
     <div id="carouselExample" class="carousel slide">
       <div class="carousel-inner">
-        <div class="banner">
-          <img src="asset/images/imagen banner 2.jpg"
-            alt="imagen banner profesionales trabajando entre una pantalla y el cliente">
-          <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
-            <p>Johana Redondo <br><br>Full Stack Developer Jr.</p></br>
+          <img class="container-fluid" src="asset/images/desarrollador-de-software-p.jpeg"
+            alt="imagen de una computadora en un escritorio">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Fin banner-->
+  <!---Titulo-->
+  <section>
+    <div class="titulo-programadora">
+      <h1 style="text-align: center;">Johana Redondo</h1>
+      <h2 style="text-align: center">Desarrolladora Full Stack Jr.</h2>
+      <!--modal de modficar-->
+      <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+        <i class="fa-solid fa-pencil"></i>
+        <!--modal de eliminar-->
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+          <i class="fa-solid fa-trash"></i>
+        </button>
+    </div>
+  </section>
+  <!--Fin titulo-->
 
+
+  <!--Sobre mi-->
+  <section id="sobre-mi">
+    <article class="container-fluid">
+      <div class="text-about">
+        <h1><em><span class="container">Sobre</span> mí</h1></em>
+        <p>Soy una persona proactiva, excelente compañera de equipo, organizada y responsable.<br>
+          Siento mucho interés por la programación ,administración y la capacitación constante.<br> Disfruto mucho
+          aprender cosas nuevas, por lo que mi objetivo es un puesto desafiante y dinámico en el cual
+          pueda compartir mi experiencia y a su vez crecer profesionalmente. </p>
+        <!--modal de modficar-->
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+          <i class="fa-solid fa-pencil"></i>
+          <!--modal de eliminar-->
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+            <i class="fa-solid fa-trash"></i>
+          </button>
+      </div>
+      <div class="img-about">
+        <img src="asset/images/FOTO CV.jpg" alt="foto de perfil personal">
+        <!--modal de modficar-->
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+          <i class="fa-solid fa-pencil"></i>
+          <!--modal de eliminar-->
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+            <i class="fa-solid fa-trash"></i>
+          </button>
+      </div>
+      </div>
+    </article>
+  </section>
+
+  <!--Fin acerca de mi-->
+
+
+  <!-- Educación -->
+  <section id="mi-educacion">
+    <div class="container">
+      <div class="row justify-content-center">
+          <div class="text-center mt-5 mb-5">
+            <h2>Mi educación</h2>
           </div>
         </div>
       </div>
-  </section>
-  <!--Fin banner-->
+    </div>
 
-  <div class="container-acerca-de-mi">
-    <img src="asset/images/foto de perfil.jpg" class="rounded mx-auto d-block" alt="foto-perfil" width="220px"
-      height="220px" class="img-fluid">
-    <span>
-      <h3>Acerca de mí</h3>
-      <div class="col-xs-12 col-sm-08 col-md-8 col-lg-8">
-        <p class="info-sobre-mi">Soy una persona proactiva, excelente compañera de equipo, organizada y responsable.
-          Siento mucho interés por la programación ,administración y la capacitación constante. Disfruto mucho
-          aprender cosas nuevas, por lo que mi objetivo es un puesto desafiante y dinámico donde poder
-          compartir mi experiencia y a su vez crecer profesionalmente. </p>
-    </span>
-  </div>
-  </div>
-
-  <!-- Educación -->
-
-  <div class="container text-center">
-    <div class="row align-items-start">
-      <div class="educacion"></div>
-      <h2>Mi ducación</h2>
-      <div class="col">
-        <div class="estudio-posgrado"></div>
-        <img src="asset/images/MINIATURA-ARGEPROGR.jpg" alt="Logo de la Universidad Autonoma de Entre Ríos">
-        <h5 class="educacion-titulo">Full Stack Developer Jr</h5>
-        <p>Argentina Programa-INTI</p>
-        <h5 class="educacion-año">2023</h5>
+    <div class="col-lg-12 col-md-8 col-sm-8 col-xs-4">
+      <div class="estudio-posgrado"></div>
+      <img src="asset/images/MINIATURA-ARGEPROGR.jpg" alt="Logo de la Universidad Autonoma de Entre Ríos">
+      <h5 class="educacion-titulo">Full Stack Developer Jr</h5>
+      <p>Argentina Programa-INTI</p>
+      <h5 class="educacion-año">2023</h5>
+      <div>
+        <!--modal de modficar-->
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+          <i class="fa-solid fa-pencil"></i>
+          <!--modal de eliminar-->
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+            <i class="fa-solid fa-trash"></i>
+          </button>
       </div>
       <div class="col">
         <div class="estudio-universitario"></div>
@@ -118,300 +162,508 @@
         <h5 class="educacion-titulo">Técnica Archivera</h5>
         <p>Universidad Autónoma de Entre Ríos</p>
         <h5 class="educacion-año">2021</h5>
+        <div>
+          <!--modal de modficar-->
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+            <i class="fa-solid fa-pencil"></i>
+            <!--modal de eliminar-->
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+              <i class="fa-solid fa-trash"></i>
+            </button>
+        </div>
+  </section>
+
+  <!-- Fin Educación -->
+
+  <!--Mis cursos-->
+  <section>
+    <div id="mis-cursos">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-12">
+            <div class="text-center mt-5 mb-5">
+              <h2>Mis Cursos</h2>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="col">
-        <div class="estudio-secundario"></div>
-        <img src="asset/images/Esc.Rep.EntreRios.png" alt="Logo de la escuela República de Entre Ríos">
-        <h5 class="educacion-titulo">Nivel Polimodal en</h5>
-        <p>Escuela República de Entre Ríos</p>
-        <h5 class="educacion-año">2005</h5>
+
+      <div class="row row-cols-lg-2 row-cols-md-2 g-4">
+        <div class="row-cols-lg">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">#SéProgramar-
+                Ministerio de Desarrollo Productivo.
+                Modalidad: online.</h5>
+              <p class="card-text">
+              <ul style="text-align:justify;">
+                <li>Introducción a la programación;</li>
+                <li>Introducción a lenguajes de programación: Gobstones; JavaScript & Ruby.</li>
+              </ul>
+              </p>
+              <p>
+                <em>2021-2022</em>
+              </p>
+              <!--modal de modificar-->
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+                <i class="fa-solid fa-pencil"></i>
+                <!--modal de eliminar-->
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+                  <i class="fa-solid fa-trash"></i>
+                </button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Desarrollo de un plan de carrera
+                profesional-UADER Fcg</h5>
+              <p class="card-text">
+              <ul style="text-align:justify;">
+                <li>Desarrollo de objetivos;</li>
+                <li>Gestión del tiempo;</li>
+                <li>Analisis de empresas;</li>
+                <li>Analisis FODA; etc</li>
+              </ul>
+              </p>
+              <p>
+                <em>2022</em>
+              </p>
+              <!--modal de modificar-->
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+                <i class="fa-solid fa-pencil"></i>
+                <!--modal de eliminar-->
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+                  <i class="fa-solid fa-trash"></i>
+                </button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">"Atom, Access to Memory: Normas Archivísticas y su Funcionamiento"-UADER Fcg</h5>
+              <p class="card-text">
+              <ul style="text-align:justify;">
+                <li>Introducción y funcionamiento de la plataforma Ica-AtoM;</li>
+                <li>Normas Archivísticas que regulan la plataforma.</li>
+              </ul>
+              </p>
+              <p>
+                <em>2021</em>
+              </p>
+              <!--modal de modificar-->
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+                <i class="fa-solid fa-pencil"></i>
+                <!--modal de eliminar-->
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+                  <i class="fa-solid fa-trash"></i>
+                </button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">III Congreso Archivístico de las Americas. "Territorios Archivístico:
+                Construyendo unas ciencias sociales
+                y Humanidades en la Memoria Archivística"</h5>
+              <p class="card-text">
+              <ul style="text-align:justify;">
+                <li>Contenido de experiencias archivisticas de Latinoamérica.</li>
+              </ul>
+              </p>
+              <p>
+                <em>2021</em>
+              </p>
+              <!--modal de modificar-->
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+                <i class="fa-solid fa-pencil"></i>
+                <!--modal de eliminar-->
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+                  <i class="fa-solid fa-trash"></i>
+                </button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  <!-- Fin Educación -->
+  </section>
+  <!--Fin de mis cursos-->
 
 
   <!--Inicio de mi experiencia laboral-->
-  <div id="mi-experiencia-laboral">
-    <h2>Mi experiencia laboral</h2>
-    <div class="container text-fluid">
-      <div class="row align-items-start">
-        <div class="col-lg-4 col-md-8 col-sm-08 col-xs-12">
-          <h5>Heladería Artesanal <br>"La Valenciana"</h5>
-          <em>Oct 2013-a la fecha</em>
-          <ul>
-            <li>Atención al público; caja; uso de posnet, facturación</li>
-            <li>Control de stock y reposición</li>
-            <li>Toma de pedidos, atención venta por menor y por mayor</li>
-          </ul>
-          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
-            <i class="fa-solid fa-pencil"></i>
-            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
-              <i class="fa-solid fa-trash"></i>
-            </button>
+  <section id="experiencia-laboral" class="experiencia">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-12">
+          <div class="text-center mt-5 mb-5">
+            <h2>Mi experiencia laboral</h2>
+          </div>
         </div>
-        <div class="col-lg-4">
-          <h5>Heladería Artesanal <br>"La Valenciana"</h5>
-          <em>Oct 2013-a la fecha</em>
-          <ul>
-            <li>Atención al público; caja; uso de posnet, facturación</li>
-            <li>Control de stock y reposición</li>
-            <li>Toma de pedidos, atención venta por menor y por mayor</li>
-          </ul>
-          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
-            <i class="fa-solid fa-pencil"></i>
-            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
-              <i class="fa-solid fa-trash"></i>
-            </button>
+      </div>
+    </div>
 
-        </div>
-        <div class="col-lg-4">
-          <h5>Heladería Artesanal <br>"La Valenciana"</h5>
+    <div class="row p-4">
+      <div class="col-lg-6 text-center">
+        <h5>Heladería Artesanal <br>"La Valenciana"</h5>
+        <a href="..."></a>
+        <p>
           <em>Oct 2013-a la fecha</em>
-          <ul>
-            <li>Atención al público; caja; uso de posnet, facturación</li>
-            <li>Control de stock y reposición</li>
-            <li>Toma de pedidos, atención venta por menor y por mayor</li>
-          </ul>
+        </p>
+        <p style="text-align:justify">Tareas:</p>
+        <p>
+        <ul style="text-align: justify;">
+          <li>Atención al público; caja; uso de posnet, facturación</li>
+          <li>Control de stock y reposición;</li>
+          <li>Toma de pedidos, atención venta por menor y por mayor.</li>
+        </ul>
+        </p>
+        <div>
+          <!--modal de modficar-->
           <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
             <i class="fa-solid fa-pencil"></i>
+            <!--modal de eliminar-->
             <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
               <i class="fa-solid fa-trash"></i>
             </button>
         </div>
       </div>
+
+
+      <div class="col-lg-6 text-center">
+        <h5>Drugtore "La esquina"</h5>
+        <a href="..."></a>
+        <p>
+          <em>julio 2012-dic 2012</em>
+        </p>
+        <p style="text-align: justify">Tareas:</p>
+        <p>
+        <ul style="text-align:justify;">
+          <li>Atención al público;</li>
+          <li>Atención en caja;</li>
+          <li>Control de stock y reposición.</li>
+        </ul>
+        </p>
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+          <i class="fa-solid fa-pencil"></i>
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+            <i class="fa-solid fa-trash"></i>
+          </button>
+      </div>
     </div>
-    <div class="container text-fluid">
-      <div class="row align-items-start">
-        <div class="col-lg-4">
-          <h5>Heladería Artesanal <br>"La Valenciana"</h5>
-          <em>Oct 2013-a la fecha</em>
-          <ul>
-            <li>Atención al público; caja; uso de posnet, facturación</li>
-            <li>Control de stock y reposición</li>
-            <li>Toma de pedidos, atención venta por menor y por mayor</li>
-          </ul>
+
+    <div class="row p-4">
+      <div class="col-lg-6 text-center">
+        <h5>Panadería "Los 3 Indios" </h5>
+        <a href="..."></a>
+        <p>
+          <em>en 2012-junio 2012</em>
+        <p style="text-align: justify">Tareas:</p>
+        <ul style="text-align: justify;">
+          <li>Atención al público;</li>
+          <li>Atención en caja;</li>
+          <li>Control de stock y reposición de mercaderia.</li>
+        </ul>
+        </p>
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+          <i class="fa-solid fa-pencil"></i>
           <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
-            <i class="fa-solid fa-pencil"></i>
-            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
-              <i class="fa-solid fa-trash"></i>
-            </button>
-        </div>
-        <div class="col-lg-4">
-          <h5>Heladería Artesanal <br>"La Valenciana"</h5>
-          <em>Oct 2013-a la fecha</em>
-          <ul>
-            <li>Atención al público; caja; uso de posnet, facturación</li>
-            <li>Control de stock y reposición</li>
-            <li>Toma de pedidos, atención venta por menor y por mayor</li>
-          </ul>
+            <i class="fa-solid fa-trash"></i>
+          </button>
+      </div>
+
+      <div class="col-lg-6 text-center">
+        <a href="..."></a>
+        <h5>Drugstore ("Hospital San Martín")</h5>
+        <p>
+          <em>ene 2011-feb 2012</em>
+        </p>
+        <p style="text-align: justify">Tareas:</p>
+        <p>
+        <ul style="text-align: justify;">
+          <li>Atención al público;</li>
+          <li>Atención de caja;</li>
+          <li>Reposicion de mercaderia y limpieza.</li>
+        </ul>
+        </p>
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+          <i class="fa-solid fa-pencil"></i>
           <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
-            <i class="fa-solid fa-pencil"></i>
-            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
-              <i class="fa-solid fa-trash"></i>
-            </button>
-        </div>
-        <div class="col-lg-4">
-          <h5>Heladería Artesanal <br>"La Valenciana"</h5>
-          <em>Oct 2013-a la fecha</em>
-          <ul>
-            <li>Atención al público; caja; uso de posnet, facturación</li>
-            <li>Control de stock y reposición</li>
-            <li>Toma de pedidos, atención venta por menor y por mayor</li>
-          </ul>
-          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
-            <i class="fa-solid fa-pencil"></i>
-            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
-              <i class="fa-solid fa-trash"></i>
-            </button>
+            <i class="fa-solid fa-trash"></i>
+          </button>
+      </div>
+    </div>
+  </section>
+
+  <section id="formacion-profesional">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-12">
+          <div class="text-center mt-5 mb-5">
+            <h2>Mi formación Profesional</h2>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
+    <div class="row p-4">
+      <div class="col-lg-6 text-center">
+        <h5>Museo Provincial Hogar Escuela Eva Perón</h5>
+        <p>
+          <em>feb 2019-dic 2022</em>
+        </p>
+        <p style="text-align: justify">Tareas:</p>
+        <p>
+        <ul style="text-align: justify;">
+          <li>Organizar, clasificar y describir los documentos historicos;</li>
+          <li>Carga de datos e información en plataforma
+            virtual Gestión de Museos;</li>
+          <li>Organizar visitas guiadas en el Archivo Histórico del Museo.</li>
+          <li>Presentar y gestionar proyectos e informes de trabajo.</li>
+        </ul>
+        </p>
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+          <i class="fa-solid fa-pencil"></i>
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+            <i class="fa-solid fa-trash"></i>
+          </button>
+      </div>
 
+      <div class="col-lg-6 text-center">
+        <h5>UADER-Facultad de Ciencias de la Gestión</h5>
+        <p>
+          <em>feb 2012-marzo 2021</em>
+        </p>
+        <p style="text-align: justify">Tareas:</p>
+        <p>
+        <ul style="text-align:justify">
+          <li>Planificar y dictar clases virtuales del Módulo Específico de ingreso a la Carrera
+            "Licenciatura en Archivología"</li>
+          <li>Organizar los contenidos de las clases sincronicas y asincronicas</li>
+          <li>Tomar asistencia</li>
+        </ul>
+        </p>
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+          <i class="fa-solid fa-pencil"></i>
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+            <i class="fa-solid fa-trash"></i>
+          </button>
+      </div>
+
+      <div class="col-lg-6 text-center">
+        <h5>UADER-Facultad de Ciencias de la Gestión-Paraná,E.R.</h5>
+        <p>
+          <em>junio 2021-julio 2021</em>
+        </p>
+        <p style="text-align: justify">Tareas:</p>
+        <p>
+        <ul style="text-align: justify">
+          <li>Colaborar en las diversas clases programadas por el Docente titular del curso denominado,
+            "Gestión de DOCUMENTOS y ARCHIVOS,proceso facilitador para la gestión administrativa".</li>
+          <li>Mediar entre el docente y los alumnos</li>
+          <li>Tomar asistencia</li>
+        </ul>
+        </p>
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+          <i class="fa-solid fa-pencil"></i>
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+            <i class="fa-solid fa-trash"></i>
+          </button>
+      </div>
+    </div>
+  </section>
   <!--Fin de mi experiencia laboral-->
 
   <!--Inicio de mis hard & soft skills-->
-  <div class="fondo-skills">
-    <h2>Mis habilidades</h2>
-  <div class="habilidades-duras">
-   <em>Hard skills</em>
-    <p>HTML</p>
-    <div class="container"></div>
-    <div class="skills html">90%</div>
-    <!--modal de modificar-->
-    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
-      <i class="fa-solid fa-pencil"></i>
-    </button>
-    <!--modal de eliminar-->
-    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
-      <i class="fa-solid fa-trash"></i>
-    </button>
-    <p>CSS</p>
-    <div class="container"></div>
-    <div class="skills css">50%</div>
-       <!--modal de modificar-->
-       <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
-        <i class="fa-solid fa-pencil"></i>
+  <section id="habilidades">
+    <div class="row justify-content-center">
+      <div class="text-center mt-5 mb-5">
+        <h2>Mis habilidades</h2>
+      </div>
+    </div>
+    <div class="habilidades-duras">
+      <em>
+        <h4>HARD SKILLS</h4>
+      </em>
+      <p>HTML</p>
+      <div class="container"></div>
+      <div class="col-xs-12 col-sm-8 col-md-8 col-lg-12">
+        <div class="skills html">90%</div>
+        <!--modal de modificar-->
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+          <i class="fa-solid fa-pencil"></i>
+        </button>
         <!--modal de eliminar-->
         <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
           <i class="fa-solid fa-trash"></i>
         </button>
-    <p>JAVASCRIPT</p>
-    <div class="container"></div>
-    <div class="skills javascript">10%</div>
-  <div>
-    <!--modal de modficar-->
-    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
-      <i class="fa-solid fa-pencil"></i>
+        <p>CSS</p>
+        <div class="container"></div>
+        <div class="skills css">50%</div>
+        <!--modal de modificar-->
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+          <i class="fa-solid fa-pencil"></i>
+          <!--modal de eliminar-->
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+            <i class="fa-solid fa-trash"></i>
+          </button>
+          <p>JAVASCRIPT</p>
+          <div class="container"></div>
+          <div class="skills javascript">10%</div>
+          <div>
+            <!--modal de modficar-->
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+              <i class="fa-solid fa-pencil"></i>
+              <!--modal de eliminar-->
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+                <i class="fa-solid fa-trash"></i>
+              </button>
+          </div>
+      </div>
+    </div>
+
+
+
+    <div class="habilidades-blandas">
+      <em>
+        <h4>SOFT SKILLS</h4>
+      </em>
+      <p>COMUNICACIÓN EFECTIVA</p>
+      <div class="container"></div>
+      <div class="skills comunicacion-efectiva">90%</div>
+      <!--modal de modificar-->
+      <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+        <i class="fa-solid fa-pencil"></i>
+      </button>
       <!--modal de eliminar-->
       <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
         <i class="fa-solid fa-trash"></i>
       </button>
-    </div>
-  </div>
-  
-  <div class="habilidades-blandas">
-    <em>Soft skills</em>
-    <p>COMUNICACIÓN EFECTIVA</p>
-    <div class="container"></div>
-    <div class="skills comunicacion-efectiva">90%</div>
-    <!--modal de modificar-->
-    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
-      <i class="fa-solid fa-pencil"></i>
-    </button>
-    <!--modal de eliminar-->
-    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
-      <i class="fa-solid fa-trash"></i>
-    </button>
-    <p>AUTOGESTIÓN</p>
-    <div class="container"></div>
-    <div class="skills autogestion">50%</div>
-       <!--modal de modificar-->
-       <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
-        <i class="fa-solid fa-pencil"></i>
-        <!--modal de eliminar-->
-        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
-          <i class="fa-solid fa-trash"></i>
-        </button>
-    <p>TRABAJO EN EQUIPO</p>
-       <!--modal de modificar-->
-       <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
-        <i class="fa-solid fa-pencil"></i>
-        <!--modal de eliminar-->
-        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
-          <i class="fa-solid fa-trash"></i>
-        </button>
-    <div class="container"></div>
-    <div class="skills trabajo-en-equipo">10%</div>
-       <!--modal de modificar-->
-       <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
-        <i class="fa-solid fa-pencil"></i>
-        <!--modal de eliminar-->
-        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
-          <i class="fa-solid fa-trash"></i>
-        </button>
-    <p>CAPACIDAD ANALÍTICA</p>
-    <div class="container"></div>
-    <div class="skills capacidad-analitica">10%</div>
-  <div>
-    <!--modal de modficar-->
-    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
-      <i class="fa-solid fa-pencil"></i>
-      <!--modal de eliminar-->
+      <p>AUTOGESTIÓN</p>
+      <div class="container"></div>
+      <div class="skills autogestion">80%</div>
+      <!--modal de modificar-->
       <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
-        <i class="fa-solid fa-trash"></i>
-      </button>
+        <i class="fa-solid fa-pencil"></i>
+        <!--modal de eliminar-->
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+          <i class="fa-solid fa-trash"></i>
+        </button>
+        <p>TRABAJO EN EQUIPO</p>
+        <!--modal de modificar-->
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+          <i class="fa-solid fa-pencil"></i>
+          <!--modal de eliminar-->
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+            <i class="fa-solid fa-trash"></i>
+          </button>
+          <div class="container"></div>
+          <div class="skills trabajo-en-equipo">70%</div>
+          <!--modal de modificar-->
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+            <i class="fa-solid fa-pencil"></i>
+            <!--modal de eliminar-->
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+              <i class="fa-solid fa-trash"></i>
+            </button>
+            <p>CAPACIDAD ANALÍTICA</p>
+            <div class="container"></div>
+            <div class="skills capacidad-analitica">70%</div>
+            <div>
+              <!--modal de modficar-->
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+                <i class="fa-solid fa-pencil"></i>
+                <!--modal de eliminar-->
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+                  <i class="fa-solid fa-trash"></i>
+                </button>
+            </div>
     </div>
-  </div>
-  </div>
+    </div>
+    </div>
+  </section>
   <!--Fin de mis hard & soft skills-->
 
   <!--Inicio de mis proyectos-->
-  <section>
-    <div id="mis-proyectos">
-      <h3>Mis proyectos</h3>
-      <div class="row row-cols-lg-2 row-cols-md-2 g-4">
-        <div class="row-cols-lg-">
+  <section id="mi-proyecto">
+    <div id="container">
+      <em>
+        <p>
+        <h2 style="text-align: center;">Mi primer Proyecto</h2>
+        </p>
+      </em>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
           <div class="card">
-            <img src="..." class="card-img-top" alt="...">
+            <img src="asset/images/imagen 1 del portfolio.jpg.png" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a
-                natural lead-in to additional content. This content is a little bit longer.
+              <p>
+              <h5 class="card-title">Mi primer Portfolio Web</h5>
               </p>
-              <!--modal de modificar-->
-              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
-                <i class="fa-solid fa-pencil"></i>
-                <!--modal de eliminar-->
-                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
-                  <i class="fa-solid fa-trash"></i>
-                </button>
+              <p class="card-text">Estructura estatica de mi primer Portfolio Web</p>
             </div>
           </div>
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+            <i class="fa-solid fa-pencil"></i>
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+              <i class="fa-solid fa-trash"></i>
+            </button>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="asset/images/imagen 2 de mi portfolio.jpg.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Segunda imagen de mi Portfolio Web</h5>
+              <p class="card-text">Estructura estatica de mi primer Portfolio Web</p>
+            </div>
+          </div>
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+            <i class="fa-solid fa-pencil"></i>
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+              <i class="fa-solid fa-trash"></i>
+            </button>
         </div>
         <div class="col">
           <div class="card">
-            <img src="..." class="card-img-top" alt="...">
+            <img src="asset/images/imagen 3 de mi portfolio.jpg.png" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a
-                natural lead-in to additional content. This content is a little bit longer.
-              </p>
-              <!--modal de modificar-->
-              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
-                <i class="fa-solid fa-pencil"></i>
-                <!--modal de eliminar-->
-                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
-                  <i class="fa-solid fa-trash"></i>
-                </button>
+              <h5 class="card-title">Tercera imagen de mi portfolio web</h5>
+              <p class="card-text">Estructura estatica de mi primer Portfolio Web</p>
             </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a
-                natural lead-in to additional content.This content is a little bit longer.
-              </p>
-              <!--modal de modificar-->
-              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
-                <i class="fa-solid fa-pencil"></i>
-                <!--modal de eliminar-->
-                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
-                  <i class="fa-solid fa-trash"></i>
-                </button>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a
-                natural lead-in to additional content. This content is a little bit longer.
-              </p>
-              <!--modal de modificar-->
-              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
-                <i class="fa-solid fa-pencil"></i>
-                <!--modal de eliminar-->
-                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
-                  <i class="fa-solid fa-trash"></i>
-                </button>
-            </div>
-          </div>
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+            <i class="fa-solid fa-pencil"></i>
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+              <i class="fa-solid fa-trash"></i>
+            </button>
         </div>
       </div>
   </section>
+
   <!--Fin de mis proyectos-->
 
-  <footer id="footer">
-    <address>direccion</address>
+  <!--Inicio de footer-->
+  <footer>
+    <div>
+      <p>
+        <em>
+          <em>
+            <h5 style="text-align: center;">Johana</h5>
+          </em>
+          <h6 style="text-align: center;">Contacto: (343)-154470527</h6>
+        </em>
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+          <i class="fa-solid fa-pencil"></i>
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+            <i class="fa-solid fa-trash"></i>
+          </button>
+      </p>
+    </div>
   </footer>
+  <!--Fin de footer-->
 
 
 

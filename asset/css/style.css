@@ -1,80 +1,145 @@
-/*Esto es un comentario en CSS*/
-
+/*INICIO NAVBAR*/
 .bg-navbar {
-    background-color: #fea092;
+    background-color: #0c0200;
 }
 
 .nav-link {
-    color: #666;
+    color: white;
 }
+/*FIN NAVBAR*/
 
-/*Comienza BANNER*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/*INICIO BANNER*/
 .fondo {
-    background-color: #ffb69d;
+    background-color: #dcdcdc;
 }
 .banner {
-    width: 10%;
-    height: 10%;
+    width: 100%;
+    height: 50%;
 }
-.banner p {
-font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-font-size: 2.5rem;
-color: white;
-position: absolute;
-top: 50%;
-left: 50%;
-text-shadow: 0 0 8px #000;
-}
+/*FIN BANNER*/
 
-/*Comienza PERFIL FOTO*/
-.foto-perfil {
-    width: 30%;
-    height: 100%;
-    border-radius: 100px;
-    position: relative;
-    left: 35px;
-    top: 10px;
-}
 
-.container-acerca-de-mi {
-    background-color:#fea092;
-    padding: 10%;
+/*INICIO TITULO DE PROGRAMADORA*/
+.titulo-programadora{
+    padding: 5%;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/*FIN TITULO DE PROGRAMADORA*/
+
+
+/*INICIO SOBRE MI*/ 
+  #sobre-mi {
+    height: 300px;
+    padding-top: 20px;
+    background-color: #ffb69d;
+  }
+  
+  #about h2 {
+    font-weight: 600;
+    padding: 20px;
+  }
+  .text-about {
+    width: 60%;
+    float: left;
+    padding-right: 40px;
+  }
+  
+  .img-about {
+    border-radius: 50%;
+    width: 40%;
+    float: right;
+    /* width: 46px;
+              height: 44px; */
+    height: 200px;
+ 
+  }
+  .img-about img {
+    width: 300px;
+    height: 255px;
+    /* height: 200px; */
+  }
+/*FIN SOBRE MI*/
+
+
+/*INICIO EDUCACIÓN*/
+#mi-educacion  {
+        padding:10%;
+        background-color: #dcdcdc;
+        text-align: center;
+        font-style: italic;
+    }
+   
+
+/*FIN EDUCACIÓN*/
+
+
+/*MIS CURSOS*/
+#mis-cursos {
+    padding:2%;
+    background-color: #ffb69d;
     text-align: center;
+    font-style: italic;
 }
-#mi-experiencia-laboral {
+.{
+    background-color: #0c0200;
+}
+
+
+/*INICIO EXPERIENCIA LABORAL*/
+#experiencia-laboral {
     padding:10%;
-    background-color: #fea092;
+    background-color: #dcdcdc;
     text-align: center;
+    font-style: italic;
 }
+/*FIN EXPERIENCIA LABORAL*/
+
+/*INICIO FORMACION PROFESIONAL*/
+#formacion-profesional {
+    padding: 10%;
+    background-color: #ffb69d;
+}
+/*FIN FORMACION PROFESIONAL*/
+
+
+
+
+/*INICIO DE SKILLS*/
+
+#habilidades {
+padding:2%;
+background-color: #dcdcdc;
+text-align: center;
+font-style: italic;
+}
+
 .fondo-skills {
     background-color: #ffb69d;
-    padding: 10%;
     text-align: center;
 }
+
 .habilidades-duras{
     width: 600px;
     margin: auto;
-    border: 1px solid;
-    padding: 10px;
     background-color: #d4c6c2;
+    border-radius: 10%;
+    border: solid 1px;
 }
 .habilidades-blandas{
     width: 600px;
     margin: auto;
-    border: 1px solid;
-    padding: 10px;
     background-color:#d4c6c2;
+    border-radius: 10%;
+    border: solid 1px;
 }
-.container {
-    width: 100%;
-    background-color: #ddd;
-}
+
+
 .skills{
     text-align: right;
     padding: 10px;
     font-weight: bold;
+    border: solid;
 }
 /*habilidades duras*/
 .html{
@@ -125,19 +190,25 @@ text-shadow: 0 0 8px #000;
 }
 @keyframes fillautogestion {
     0%{width: 0;}
-    100%{width:50%;}
+    100%{width:80%;}
 }
 @keyframes filltrabajoenequipo {
     0%{width: 0;}
-    100%{width:80%;}
+    100%{width:70%;}
 }
 @keyframes fillcapacidadanalitica {
     0%{width: 0;}
-    100%{width:90%;}
+    100%{width:70%;}
 }
-#mis-proyectos {
-    background-color: #fea092;
-}
-#footer {
+/*FIN DE SKILLS*/
+
+
+/*INICIO DE PROYECTO*/
+#mi-proyecto {
+    padding:10%;
     background-color: #ffb69d;
 }
+#mi-proyecto h2  {
+    padding: 5px;%;
+}
+/*FIN DE PROYECTO*/
