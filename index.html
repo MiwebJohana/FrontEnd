@@ -21,7 +21,7 @@
 
 <!--Aca puse un fondo de color-->
 
-<body class="fondo">
+<body class="body">
 
   <!--Empieza la navbar-redes sociales-->
   <nav class="navbar navbar-expand-lg bg-navbar">
@@ -72,18 +72,31 @@
   <section>
     <div id="carouselExample" class="carousel slide">
       <div class="carousel-inner">
-          <img class="container-fluid" src="asset/images/desarrollador-de-software-p.jpeg"
-            alt="imagen de una computadora en un escritorio">
+        <img src="asset/images/desarrollador-de-software-p.jpeg" class="img-fluid" alt="...">
         </div>
       </div>
     </div>
   </section>
   <!--Fin banner-->
+
   <!---Titulo-->
-  <section>
+  <section id="titulo">
+    <div class="container-fluid">
+      <img src="asset/images/FOTO CV.jpg" class="foto-perfil" alt="foto de perfil personal">
+      </div>
+       <!--modal de modficar-->
+       <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+        <i class="fa-solid fa-pencil"></i>
+        <!--modal de eliminar-->
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+          <i class="fa-solid fa-trash"></i>
+        </button>
+    </div>
+  </div>
+      <div class="container-fluid">
     <div class="titulo-programadora">
-      <h1 style="text-align: center;">Johana Redondo</h1>
-      <h2 style="text-align: center">Desarrolladora Full Stack Jr.</h2>
+      <h1 style="text-align: center; color:white">Johana Redondo</h1>
+      <h2 style="text-align: center; color:white">Desarrolladora Full Stack Jr.</h2>
       <!--modal de modficar-->
       <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
         <i class="fa-solid fa-pencil"></i>
@@ -92,6 +105,7 @@
           <i class="fa-solid fa-trash"></i>
         </button>
     </div>
+</div>
   </section>
   <!--Fin titulo-->
 
@@ -99,10 +113,10 @@
   <!--Sobre mi-->
   <section id="sobre-mi">
     <article class="container-fluid">
-      <div class="text-about">
-        <h1><em><span class="container">Sobre</span> mí</h1></em>
-        <p>Soy una persona proactiva, excelente compañera de equipo, organizada y responsable.<br>
-          Siento mucho interés por la programación ,administración y la capacitación constante.<br> Disfruto mucho
+        <div class="col-xs-2 col-sm-12 col-md-12 col-lg-12">
+        <h1 style="text-align: center;"><em>Sobre mí</h1></em>
+        <p style="text-align: center;">Soy una persona proactiva, excelente compañera de equipo, organizada y responsable.<br>
+          Siento mucho interés por la programación ,administración y la capacitación constante.<br>Disfruto mucho
           aprender cosas nuevas, por lo que mi objetivo es un puesto desafiante y dinámico en el cual
           pueda compartir mi experiencia y a su vez crecer profesionalmente. </p>
         <!--modal de modficar-->
@@ -113,16 +127,7 @@
             <i class="fa-solid fa-trash"></i>
           </button>
       </div>
-      <div class="img-about">
-        <img src="asset/images/FOTO CV.jpg" alt="foto de perfil personal">
-        <!--modal de modficar-->
-        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
-          <i class="fa-solid fa-pencil"></i>
-          <!--modal de eliminar-->
-          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
-            <i class="fa-solid fa-trash"></i>
-          </button>
-      </div>
+     </div>
       </div>
     </article>
   </section>
@@ -179,7 +184,7 @@
   <section>
     <div id="mis-cursos">
       <div class="container">
-        <div class="row justify-content-center">
+        <div class="row">
           <div class="col-lg-12">
             <div class="text-center mt-5 mb-5">
               <h2>Mis Cursos</h2>
@@ -297,7 +302,6 @@
   <section id="experiencia-laboral" class="experiencia">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-lg-12">
           <div class="text-center mt-5 mb-5">
             <h2>Mi experiencia laboral</h2>
           </div>
@@ -398,7 +402,7 @@
   </section>
 
   <section id="formacion-profesional">
-    <div class="container">
+    <div class="container-fluid">
       <div class="row justify-content-center">
         <div class="col-lg-12">
           <div class="text-center mt-5 mb-5">
@@ -408,7 +412,7 @@
       </div>
     </div>
 
-    <div class="row p-4">
+    <div class="row p-8">
       <div class="col-lg-6 text-center">
         <h5>Museo Provincial Hogar Escuela Eva Perón</h5>
         <p>
@@ -475,6 +479,7 @@
     </div>
   </section>
   <!--Fin de mi experiencia laboral-->
+  
 
   <!--Inicio de mis hard & soft skills-->
   <section id="habilidades">
