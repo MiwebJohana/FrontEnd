@@ -1,14 +1,18 @@
-.body { min-height: 100vh; }
+
 /*INICIO NAVBAR*/
 .bg-navbar {
     background-color: #0c0200;
 
 }
 
-
 .nav-link {
     color: white;
 }
+.nav-item {
+ align-items:flex-end;
+ width:50px;
+}
+
 /*FIN NAVBAR*/
 
 
@@ -17,207 +21,106 @@
     background-color: #dcdcdc;
 }
 .banner {
-    width: 100%;
-    height: 100%;
+    position: relative;
+    text-align: center;
 }
+  
+.banner img {
+    width: 100%;
+    filter: brightness(0.4);
+}
+
 /*FIN BANNER*/
 
 
-/*INICIO TITULO DE PROGRAMADORA*/
-.titulo-programadora{
-    padding: 5%;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-/*FIN TITULO DE PROGRAMADORA*/
+/*INICIO SOBRE MI*/
 
-
-/*INICIO SOBRE MI*/ 
-@media (max-width:768px)
- .container {
-    padding:2rem;}
-    .img-about{
-        width:50%;
-
-    
-}
-  #sobre-mi {
-    height: 300px;
-    padding-top: 20px;
-    background-color: #ffb69d;
-    font-size: 20px;
-    padding: 10px;
-  }
-  
-  .img {
+.foto {
+    padding: 10%;
     border-radius: 50%;
-    /* width: 46px;
-              height: 44px; */
-  }
+ }
 
-  .foto-perfil {
-    width: 300px;
-    height: 225px;
-    border-radius: 50%;
-    border-style: solid;
-    position: relative;
-    z-index: 10;
-    left:20em; 
-    top: -85px; 
-    /* height: 200px; */
-  }
-  .titulo-programadora h1, h2{
-    font-family:'Courier New', Courier, monospace;
-    font-size: 50px;
-  }
+.sobremi {
+    background-color:#f3f4f6 ;
+
+}
+
 #titulo {
     background-color: #0c0200;
 }
+
+.titulo-programadora h1,
+h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+}
+
 /*FIN SOBRE MI*/
 
 
 /*INICIO EDUCACIÓN*/
-#mi-educacion  {
-        padding:10%;
-        background-color: #dcdcdc;
-        text-align: center;
-        font-style: italic;
-    }
+#mi-educacion {
+    padding: 5%;
+    background-color: #dcdcdc;
+    text-align: center;
    
+}
+.estudio-universitario {
+    padding-left: 30%;
+}
+
 
 /*FIN EDUCACIÓN*/
 
 
 /*MIS CURSOS*/
 #mis-cursos {
-    padding:2%;
+    padding: 2%;
     background-color: #ffb69d;
     text-align: center;
-    font-style: italic;
+    
 }
 
 
 /*INICIO EXPERIENCIA LABORAL*/
 #experiencia-laboral {
-    padding:10%;
+    padding: 10%;
     background-color: #dcdcdc;
     text-align: center;
-    font-style: italic;
+ 
 }
+
 /*FIN EXPERIENCIA LABORAL*/
+
 
 /*INICIO FORMACION PROFESIONAL*/
 #formacion-profesional {
     padding: 10%;
     background-color: #ffb69d;
 }
+
 /*FIN FORMACION PROFESIONAL*/
 
 
-
-/*INICIO DE SKILLS*/
-
-#habilidades {
-padding:2%;
-background-color: #dcdcdc;
-text-align: center;
-font-style: italic;
+/*INICIO DE MIS HABILIDADES, HARD&SOFT SKILLS*/
+#progressbar {
+    padding:2%;
 }
-
-.fondo-skills {
-    background-color: #ffb69d;
+#progressbar h2 {
     text-align: center;
 }
 
-.habilidades-duras{
-    width: 600px;
-    margin: auto;
-    background-color: #d4c6c2;
-    border-radius: 10%;
-    border: solid 1px;
-}
-.habilidades-blandas{
-    width: 600px;
-    margin: auto;
-    background-color:#d4c6c2;
-    border-radius: 10%;
-    border: solid 1px;
-}
-
-
-.skills{
-    text-align: right;
-    padding: 10px;
-    font-weight: bold;
-    border: solid;
-}
-/*habilidades duras*/
-.html{
-    background-color: #b38e97;
-    animation: fillhtml 2s forwards;
-}
-.css{
-    background-color: #b38e97;
-    animation: fillcss 2s forwards;
-}
-.javascript {
-    background-color: #b38e97;
-    animation: filljavascript 2s forwards;
-}
-@keyframes fillhtml {
-    0%{width: 0;}
-    100%{width:90%;}
-}
-@keyframes fillcss {
-    0%{width: 0;}
-    100%{width:50%;}
-}
-@keyframes filljavascript {
-    0%{width: 0;}
-    100%{width:10%;}
-}
-/*habilidades blandas*/
-.comunicacion-efectiva{
-    background-color: #805d5a;
-    animation: fillcomunicacionefectiva 2s forwards;
-}
-.autogestion{
-    background-color:  #805d5a;
-    animation: fillautogestion 2s forwards;
-}
-.trabajo-en-equipo {
-    background-color:  #805d5a;
-    animation: filltrabajoenequipo 2s forwards;
-}
-.capacidad-analitica {
-    background-color:  #805d5a;
-    animation: filltrabajoenequipo 2s forwards;
-}
-
-@keyframes fillcomunicacionefectiva {
-    0%{width: 0;}
-    100%{width:90%;}
-}
-@keyframes fillautogestion {
-    0%{width: 0;}
-    100%{width:80%;}
-}
-@keyframes filltrabajoenequipo {
-    0%{width: 0;}
-    100%{width:70%;}
-}
-@keyframes fillcapacidadanalitica {
-    0%{width: 0;}
-    100%{width:70%;}
-}
-/*FIN DE SKILLS*/
+/*FIN DE MIS HABILIDADES, HARD&SOFT SKILLS*/
 
 
 /*INICIO DE PROYECTO*/
 #mi-proyecto {
-    padding:10%;
+    padding: 10%;
     background-color: #ffb69d;
 }
-#mi-proyecto h2  {
+
+#mi-proyecto h2 {
     padding: 5px;
 }
+
 /*FIN DE PROYECTO*/
