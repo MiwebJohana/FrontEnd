@@ -28,8 +28,7 @@
     <nav class="navbar navbar-expand-lg bg-navbar">
       <div class="container-fluid">
         <a class="navbar-brand" href="https://www.argentina.gob.ar/economia/conocimiento/argentina-programa">
-          <img src="asset/images/Logos inti y argentina programa.png" alt="Logo de Argentina Programa">
-        </a>
+          <img src="asset/images/Logos inti y argentina programa.png" alt="Logo de Argentina Programa"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -40,37 +39,51 @@
 
           <!--Primer item de red soial-github-->
 
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="https://github.com/MiwebJohana"><i
-                class="fa-brands fa-github"></i>
+          <li class="nav-item"> <a class="nav-link" aria-current="page" href="https://github.com/MiwebJohana"><i
+                class="fa-brands fa-github"></i></a></li>
+          <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/johana-redondo-40aab2230/"><i
+                class="fa-brands fa-linkedin"></i></a>
+          <li class="nav-item"><a class="nav-link"><i class="fa-brands fa-facebook"></i></a></li>
+          <!-- Button trigger modal -->
+          <li class="nav-item"><a class="nav-link" href="#">
+              <i class="fa-solid fa-user" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+
             </a>
-
-            <!--Segundo item de red social-Linkedin-->
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://www.linkedin.com/in/johana-redondo-40aab2230/"><i
-                class="fa-brands fa-linkedin"></i>
-            </a>
-
-            <!--Tercer item de red social-Faceboock-->
-          <li class="nav-item">
-            <a class="nav-link"><i class="fa-brands fa-facebook"></i></a>
-          </li>
-
-          <!--Quinto item de Login-->
-          <li class="nav-item">
-            <a class="nav-link"><i class="fa-solid fa-user"></i></a>
-          </li>
-
-
-          <!--modal de modificar-->
-          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
-            <i class="fa-solid fa-pencil"></i>
-            <!--modal de eliminar-->
-            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
-              <i class="fa-solid fa-trash"></i>
-            </button>
         </ul>
+
+
+        <!-- Modal LOGIN-->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                  <label for="inputPassword5" class="form-label">Contraseña</label>
+                  <input type="password" id="inputPassword5" class="form-control" aria-labelledby="passwordHelpBlock">
+                  <div id="passwordHelpBlock" class="form-text">
+                    Your password must be 8-20 characters long, contain letters and numbers, and must not contain
+                    spaces, special characters, or emoji.
+                  </div>
+                </div>
+                <div class="modal-footer">
+
+                  <button type="button" class="btn btn-primary">Iniciar Sesión</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
     </nav>
     </div>
     </div>
@@ -86,63 +99,210 @@
   <!--Fin banner-->
 
 
-
-  <!--Sobre mi-->
-  <section id="sobremi" class="sobremi">
-    <div class="container">
+  <!--Inicio de presentación-->
+  <section id="presentacion">
+    <div class="container-fluid">
       <div class="row">
         <div class="col-lg-12">
           <div class="text-center mt-5">
-            <h2>Johana Redondo</h2>
-            <h3>Full Stack Developer Jr & Téc. Archivera</h3><br><br><br>
-            <h2>Sobre mí</h2>
-            <!--modal de modficar-->
-            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+            <img class="foto-p" src="asset/images/FOTO CV.jpg" width="400px" height="400px"
+              alt="Foto de perfil de Johana Redondo">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalmodificarfotodeperfil">
               <i class="fa-solid fa-pencil"></i>
-              <!--modal de eliminar-->
-              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+              <!-- Button trigger modal -->
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modaleliminarfotodeperfil">
                 <i class="fa-solid fa-trash"></i>
               </button>
-          </div><br>
-        </div>
 
-      </div>
-    </div>
-    </div>
+              <!-- Modal eliminar foto-->
+              <div class="modal fade" id="modaleliminarfotodeperfil" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Eliminar foto/imagen</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        ¿Estas segur@ de eliminar la foto/imagen?
+                      </label>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary">Guardar cambios</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-    <div class="row">
-      <div class="col-lg-8 mb-6">
-        <div style="text-align: justify;" class="mt-4 mb-5 ml-6">
-          <p class="info-sobremi">Soy una persona proactiva, excelente compañera de equipo, organizada y
-            responsable. Siento mucho interés por la programación ,administración y la capacitación constante. Disfruto
-            mucho
-            aprender cosas nuevas, por lo que mi objetivo es un puesto desafiante y dinámico en el cual
-            pueda compartir mi experiencia y crecer profesionalmente. </p>
+              <!-- Modal modificar foto-->
+              <div class="modal fade" id="modalmodificarfotodeperfil" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Edición foto/imagen</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <input type="file" class="form-control" id="modalmodificarfotodeperfil-describedby="
+                        inputGroupFileAddon04" aria-label="Upload">
+                      <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Guardar
+                        cambios</button>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+
+                  </div>
+                </div>
+              </div>
+
+
+
+
+              <h1>Bienvenidos!</h1>
+              <p> Mi nombre es </p>
+              <h2>Johana Redondo</h2>
+              <p> Soy</p>
+              <h3>Full Stack Developer Jr & Téc. Archivera</h3>
+              <!-- Button trigger modal modificar presentacion-->
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalmodificarpresentacion">
+                <i class="fa-solid fa-pencil"></i>
+
+                <!-- Button trigger modal eliminar presentacion-->
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modaleliminarpresentacion">
+                  <i class="fa-solid fa-trash"></i>
+                </button>
+
+                <!-- Modal eliminar presentacion-->
+                <div class="modal fade" id="modaleliminarpresentacion" tabindex="-1" aria-labelledby="exampleModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Eliminar contenido</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          ¿Estas segur@ de eliminar el contenido?
+                        </label>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Guardar cambios</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Modal modificar presentacion-->
+                <div class="modal fade" id="modalmodificarpresentacion" data-bs-backdrop="static"
+                  data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="modalmodificarpresentacion">Edición de presentación</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="mb-3">
+                          <label for="exampleFormControlTextarea1" class="form-label">Editar contenido</label>
+                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Guardar cambios</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          </div>
         </div>
       </div>
-      <div class="col-lg-4">
-        <div class="imagen-perfil">
-          <img src="asset/images/FOTO CV.jpg" class="foto" alt="Foto de Johana Redondo" width="400px" height="400px">
-          <!--modal de modficar-->
-          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
-            <i class="fa-solid fa-pencil"></i>
-            <!--modal de eliminar-->
-            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
-              <i class="fa-solid fa-trash"></i>
-            </button>
-        </div><br>
-      </div>
-    </div>
-    </div>
-    </div>
     </div>
   </section>
-  <!--Fin acerca de mi-->
+  <!--Fin de presentación-->
 
 
-  <!-- Educación -->
+
+  <!--Inicio sobre mi-->
+  <section id="sobremi" class="sobremi">
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row row-cols">
+          <div class="col">
+            <div class="text-center mt-5 mb-5">
+              <h2>Les cuento acerca de mi... ★</h2>
+              <div class="col-lg-12 col-md-8 col-sm-8 col-xs-4">
+                <p class="info-sobremi">Soy una persona proactiva, excelente compañera de equipo, organizada y
+                  responsable. Siento mucho interés por la programación ,administración y la capacitación constante.
+                  Disfruto aprender cosas nuevas, por lo que mi objetivo es un puesto desafiante y dinámico en el que
+                  pueda compartir mi experiencia y crecer profesionalmente.</p>
+              </div>
+              <!-- Button trigger modal modificar sobre mi-->
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalmodificarsobremi">
+                <i class="fa-solid fa-pencil"></i>
+
+                <!-- Button trigger modal eliminar sobre mi-->
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modaleliminarsobremi">
+                  <i class="fa-solid fa-trash"></i>
+                </button>
+
+                <!-- Modal eliminar sobre mi -->
+                <div class="modal fade" id="modaleliminarsobremi" tabindex="-1" aria-labelledby="exampleModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Eliminar contenido</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          ¿Estas segur@ de eliminar el contenido?
+                        </label>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Guardar cambios</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Modal modificar sobre mi-->
+                <div class="modal fade" id="modalmodificarsobremi" data-bs-backdrop="static" data-bs-keyboard="false"
+                  tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="modalmodificarsobremi">Edición de Acerca de mi</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="mb-3">
+                          <label for="exampleFormControlTextarea1" class="form-label">Editar contenido</label>
+                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Guardar cambios</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+            </div>
+          </div>
+        </div>
+  </section>
+  <!--Fin sobre mi-->
+
+
+  <!-- Inicio de mi educación -->
   <section id="mi-educacion">
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
         <div class="col">
           <div class="text-center mt-5 mb-5">
@@ -156,146 +316,256 @@
                 <p>Universidad Autónoma de Entre Ríos</p>
                 <h5 class="educacion-año">2021</h5>
                 <div>
-                  <!--modal de modficar-->
-                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+                  <!-- Button trigger modal modificar-->
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalmodificareducacion">
                     <i class="fa-solid fa-pencil"></i>
-                    <!--modal de eliminar-->
-                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+
+                    <!-- Button trigger modal eliminar-->
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modaleliminareducacion">
                       <i class="fa-solid fa-trash"></i>
                     </button>
+
+                    <!-- Modal eliminar educación-->
+                    <div class="modal fade" id="modaleliminareducacion" tabindex="-1"
+                      aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Eliminar contenido</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                              ¿Estas segur@ de eliminar el contenido?
+                            </label>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-primary">Guardar cambios</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Modal modificar educación-->
+                    <div class="modal fade" id="modalmodificareducacion" tabindex="-1"
+                      aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Edición educación</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <label for="formFileSm" class="form-label">Agregar nueva imagen</label>
+                            <input class="form-control form-control-sm" id="formFileSm" type="file">
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Editar contenido</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-primary">Guardar cambios</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+
                 </div><br>
               </div>
-
-              <div class="col-lg-12 col-md-8 col-sm-8 col-xs-4">
-                <div class="estudio-posgrado"></div>
-                <img src="asset/images/Esc.Rep.EntreRios.png" alt="Logo de la Universidad Autonoma de Entre Ríos">
-                <h5 class="educacion-titulo">Nivel polimodal en economía y gestión de las organizaciones</h5>
-                <p>República de Entre Ríos</p>
-                <h5 class="educacion-año">2011</h5>
-                <div>
-                  <!--modal de modficar-->
-                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
-                    <i class="fa-solid fa-pencil"></i>
-                    <!--modal de eliminar-->
-                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
-                      <i class="fa-solid fa-trash"></i>
-                    </button>
-                </div>
-              </div>
-            </div>
-  </section>
-  <!-- Fin Educación -->
-
-  <!--Mis cursos-->
-  <section>
-    <div id="mis-cursos">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="text-center mt-5 mb-5">
-              <h2>Mis Cursos</h2>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="row row-cols-lg-4 row-cols-md-2 g-4">
-        <div class="row-cols">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">#SéProgramar-
-                Ministerio de Desarrollo Productivo.
-                Modalidad: online.</h5>
-              <p class="card-text">
-              <ul style="text-align:justify;">
-                <li>Introducción a la programación;</li>
-                <li>Introducción a lenguajes de programación: Gobstones; JavaScript & Ruby.</li>
-              </ul>
-              </p>
-              <p>
-                <em>2021-2022</em>
-              </p>
-              <!--modal de modificar-->
-              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
-                <i class="fa-solid fa-pencil"></i>
-                <!--modal de eliminar-->
-                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
-                  <i class="fa-solid fa-trash"></i>
-                </button>
-            </div>
+      <div class="col-lg-12 col-md-8 col-sm-8 col-xs-4">
+        <div class="estudio-posgrado"></div>
+        <img src="asset/images/Esc.Rep.EntreRios.png" alt="Logo de la Escuela República de Entre Ríos">
+        <h5 class="educacion-titulo">Nivel polimodal en economía y gestión de las organizaciones</h5>
+        <p>República de Entre Ríos</p>
+        <h5 class="educacion-año">2011</h5>
+        <div>
+          <!-- Button trigger modal modificar-->
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalmodificareducacion">
+            <i class="fa-solid fa-pencil"></i>
+
+            <!-- Button trigger modal eliminar -->
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modaleliminareducacion">
+              <i class="fa-solid fa-trash"></i>
+            </button>
+
+
+        </div>
+      </div>
+  </section>
+  <!-- Fin educación -->
+
+  <!--Inicio de mis cursos-->
+  <section id="mis-cursos">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="text-center mt-5 mb-5">
+            <h2>Mis Cursos</h2>
           </div>
         </div>
-        <div class="col">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Desarrollo de un plan de carrera
-                profesional-UADER Fcg</h5>
-              <p class="card-text">
-              <ul style="text-align:justify;">
-                <li>Desarrollo de objetivos;</li>
-                <li>Gestión del tiempo;</li>
-                <li>Analisis de empresas;</li>
-                <li>Analisis FODA; etc</li>
-              </ul>
-              </p>
-              <p>
-                <em>2022</em>
-              </p>
-              <!--modal de modificar-->
-              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
-                <i class="fa-solid fa-pencil"></i>
-                <!--modal de eliminar-->
-                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
-                  <i class="fa-solid fa-trash"></i>
-                </button>
-            </div>
+      </div>
+    </div>
+
+    <div class="row row-cols-lg-4 row-cols-md-2 g-4">
+      <div class="row-cols">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">#SéProgramar-
+              Ministerio de Desarrollo Productivo.
+              Modalidad: online.</h5>
+            <p class="card-text">
+            <ul style="text-align:justify;">
+              <li>Introducción a la programación;</li>
+              <li>Introducción a lenguajes de programación: Gobstones; JavaScript & Ruby.</li>
+            </ul>
+            </p>
+            <p>
+              <em>2021-2022</em>
+            </p>
+            <!-- Button trigger modal modificar-->
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalmodificarcurso">
+              <i class="fa-solid fa-pencil"></i>
+
+              <!-- Button trigger modal eliminar-->
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modaleliminarcurso">
+                <i class="fa-solid fa-trash"></i>
+              </button>
+              <!-- Modal eliminar curso-->
+              <div class="modal fade" id="modaleliminarcurso" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Eliminar contenido</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        ¿Estas segur@ de eliminar el contenido?
+                      </label>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary">Guardar cambios</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Modal modificar curso -->
+              <div class="modal fade" id="modalmodificarcurso" ata-bs-backdrop="static" data-bs-keyboard="false"
+                tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="modalmodificareducacion">Edición curso</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Editar contenido</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Guardar cambios</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
           </div>
         </div>
-        <div class="col">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">"Atom, Access to Memory: Normas Archivísticas y su Funcionamiento"-UADER Fcg</h5>
-              <p class="card-text">
-              <ul style="text-align:justify;">
-                <li>Introducción y funcionamiento de la plataforma Ica-AtoM;</li>
-                <li>Normas Archivísticas que regulan la plataforma.</li>
-              </ul>
-              </p>
-              <p>
-                <em>2021</em>
-              </p>
-              <!--modal de modificar-->
-              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
-                <i class="fa-solid fa-pencil"></i>
-                <!--modal de eliminar-->
-                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
-                  <i class="fa-solid fa-trash"></i>
-                </button>
-            </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Desarrollo de un plan de carrera profesional-UADER Fcg</h5>
+            <p class="card-text">
+            <ul style="text-align:justify;">
+              <li>Desarrollo de objetivos;</li>
+              <li>Gestión del tiempo;</li>
+              <li>Analisis de empresas;</li>
+              <li>Analisis FODA; etc</li>
+            </ul>
+            </p>
+            <p><em>2022</em></p>
+            <!-- Button trigger modal modificar-->
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalmodificarcurso">
+              <i class="fa-solid fa-pencil"></i>
+
+              <!-- Button trigger modal eliminar-->
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modaleliminarcurso">
+                <i class="fa-solid fa-trash"></i>
+              </button>
+
+
           </div>
         </div>
-        <div class="col">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">III Congreso Archivístico de las Americas. "Territorios Archivístico:
-                Construyendo unas ciencias sociales
-                y Humanidades en la Memoria Archivística"</h5>
-              <p class="card-text">
-              <ul style="text-align:justify;">
-                <li>Contenido de experiencias archivisticas de Latinoamérica.</li>
-              </ul>
-              </p>
-              <p>
-                <em>2021</em>
-              </p>
-              <!--modal de modificar-->
-              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
-                <i class="fa-solid fa-pencil"></i>
-                <!--modal de eliminar-->
-                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
-                  <i class="fa-solid fa-trash"></i>
-                </button>
-            </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">"Atom, Access to Memory: Normas Archivísticas y su Funcionamiento"-UADER Fcg</h5>
+            <p class="card-text">
+            <ul style="text-align:justify;">
+              <li>Introducción y funcionamiento de la plataforma Ica-AtoM;</li>
+              <li>Normas Archivísticas que regulan la plataforma.</li>
+            </ul>
+            </p>
+            <p>
+              <em>2021</em>
+            </p>
+            <!-- Button trigger modal modificar-->
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalmodificarcurso">
+              <i class="fa-solid fa-pencil"></i>
+
+              <!-- Button trigger modal eliminar-->
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modaleliminarcurso">
+                <i class="fa-solid fa-trash"></i>
+              </button>
+
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">III Congreso Archivístico de las Americas. "Territorios Archivístico:
+              Construyendo unas ciencias sociales
+              y Humanidades en la Memoria Archivística"</h5>
+            <p class="card-text">
+            <ul style="text-align:justify;">
+              <li>Contenido de experiencias archivisticas de Latinoamérica.</li>
+            </ul>
+            </p>
+            <p>
+              <em>2021</em>
+            </p>
+            <!-- Button trigger modal modificar-->
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalmodificarcurso">
+              <i class="fa-solid fa-pencil"></i>
+
+              <!-- Button trigger modal eliminar-->
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modaleliminarcurso">
+                <i class="fa-solid fa-trash"></i>
+              </button>
+
+
+
+
           </div>
         </div>
       </div>
@@ -331,13 +601,62 @@
         </ul>
         </p>
         <div>
-          <!--modal de modficar-->
-          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+          <!-- Button trigger modal modificar-->
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalmodificarexperiencialaboral">
             <i class="fa-solid fa-pencil"></i>
-            <!--modal de eliminar-->
-            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+
+            <!-- Button trigger modal eliminar-->
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modaleliminarexperiencialaboral">
               <i class="fa-solid fa-trash"></i>
             </button>
+            <!-- Modal eliminar experiencia laboral-->
+            <div class="modal fade" id="modaleliminarexperiencialaboral" tabindex="-1"
+              aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Eliminar contenido</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      ¿Estas segur@ de eliminar el contenido?
+                    </label>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Guardar cambios</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Modal modificar experiencia laboral -->
+            <div class="modal fade" id="modalmodificarcurso" ata-bs-backdrop="static" data-bs-keyboard="false"
+              tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="modalmodificareducacion">Edición experiencia laboral</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="mb-3">
+                      <label for="exampleFormControlTextarea1" class="form-label">Editar contenido</label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Guardar cambios</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+
         </div>
       </div>
 
@@ -356,11 +675,17 @@
           <li>Control de stock y reposición.</li>
         </ul>
         </p>
-        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+        <!-- Button trigger modal modificar-->
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalmodificarexperiencialaboral">
           <i class="fa-solid fa-pencil"></i>
-          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+
+          <!-- Button trigger modal eliminar-->
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modaleliminarexperiencialaboral">
             <i class="fa-solid fa-trash"></i>
           </button>
+
+
+
       </div>
     </div>
 
@@ -377,11 +702,61 @@
           <li>Control de stock y reposición de mercaderia.</li>
         </ul>
         </p>
-        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+        <!-- Button trigger modal modiifcar-->
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalmodificarexperiencialaboral">
           <i class="fa-solid fa-pencil"></i>
-          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+
+          <!-- Button trigger modal eliminar-->
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modaleliminarexperiencialaboral">
             <i class="fa-solid fa-trash"></i>
           </button>
+
+          <!-- Modal eliminar curso-->
+          <div class="modal fade" id="modaleliminarexperiencialaboral" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Eliminar contenido</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    ¿Estas segur@ de eliminar el contenido?
+                  </label>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary">Guardar cambios</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Modal modificar curso -->
+          <div class="modal fade" id="modalmodificarexperiencialaboral" ata-bs-backdrop="static"
+            data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="modalmodificareducacion">Edición experiencia laboral</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Editar contenido</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Guardar cambios</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
       </div>
 
       <div class="col-lg-6 text-center">
@@ -398,11 +773,17 @@
           <li>Reposicion de mercaderia y limpieza.</li>
         </ul>
         </p>
-        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+        <!-- Button trigger modal modificar-->
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalmodificarexperiencialaboral">
           <i class="fa-solid fa-pencil"></i>
-          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+
+          <!-- Button trigger modal eliminar-->
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modaleliminarexperiencialaboral">
             <i class="fa-solid fa-trash"></i>
           </button>
+
+
+
       </div>
     </div>
   </section>
@@ -436,11 +817,60 @@
           <li>Presentar y gestionar proyectos e informes de trabajo.</li>
         </ul>
         </p>
-        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+        <!-- Button trigger modal modificar-->
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalmodificarformacionprofesional">
           <i class="fa-solid fa-pencil"></i>
-          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+
+          <!-- Button trigger modal eliminar-->
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modaleliminarformacionprofesional">
             <i class="fa-solid fa-trash"></i>
           </button>
+
+          <!-- Modal eliminar formacion profesional-->
+          <div class="modal fade" id="modaleliminarformacionprofesional" tabindex="-1"
+            aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Eliminar contenido</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    ¿Estas segur@ de eliminar el contenido?
+                  </label>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary">Guardar cambios</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Modal modificar formacion profesional -->
+          <div class="modal fade" id="modalmodificarformacionprofesional" ata-bs-backdrop="static"
+            data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="modalmodificareducacion">Edición Formación Profesional</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Editar contenido</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Guardar cambios</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
       </div>
 
       <div class="col-lg-6 text-center">
@@ -457,11 +887,59 @@
           <li>Tomar asistencia</li>
         </ul>
         </p>
-        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+        <!-- Button trigger modal modificar-->
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalmodificarformacionprofesional">
           <i class="fa-solid fa-pencil"></i>
-          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+
+          <!-- Button trigger modal eliminar-->
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modaleliminarformacionprofesional">
             <i class="fa-solid fa-trash"></i>
           </button>
+
+
+          <!-- Modal eliminar formacion profesional-->
+          <div class="modal fade" id="modaleliminarformacionprofesional" tabindex="-1"
+            aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="modaleliminarformacionprofesional">Eliminar contenido</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    ¿Estas segur@ de eliminar el contenido?
+                  </label>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary">Guardar cambios</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Modal modificar formacion profesional -->
+          <div class="modal fade" id="modalmodificarformacionprofesional" ata-bs-backdrop="static"
+            data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="modalmodificarformacionprofesional">Edición Formación Profesional
+                  </h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Editar contenido</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Guardar cambios</button>
+                </div>
+              </div>
+            </div>
+          </div>
       </div>
 
       <div class="col-lg-6 text-center">
@@ -478,11 +956,17 @@
           <li>Tomar asistencia</li>
         </ul>
         </p>
-        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+        <!-- Button trigger modal modificar-->
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalmodificarformacionprofesional">
           <i class="fa-solid fa-pencil"></i>
-          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+
+          <!-- Button trigger modal eliminar-->
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modaleliminarformacionprofesional">
             <i class="fa-solid fa-trash"></i>
           </button>
+
+
+
       </div>
     </div>
   </section>
@@ -493,69 +977,139 @@
   <!--Hards skills, habilidades duras-->
   <section id="progressbar">
     <h2>Mis habilidades</h2>
-    <p>Hard skills</p>
+    <p class="hard-skills" style="text-align: center">Hard skills</p>
 
     <div class="progress" style="height: 30px;" role="progressbar" aria-label="Default striped example"
       aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
       <div class="progress-bar progress-bar-striped" style="width: 70%">HTML 70%</div>
     </div>
-    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+    <!-- Button trigger modal modificar-->
+    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalmodificarcontenidoprogress">
       <i class="fa-solid fa-pencil"></i>
-      <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+
+      <!-- Button trigger modal eliminar-->
+      <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modaleliminarcontenidoprogress">
         <i class="fa-solid fa-trash"></i>
-      </button><br>
+      </button>
+
+      <!-- Modal eliminar contenido progress-->
+      <div class="modal fade" id="modaleliminarcontenidoprogress" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="modaleliminarcontenidoprogress">Eliminar contenido</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                ¿Estas segur@ de eliminar el contenido?
+              </label>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Guardar cambios</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal modificar contenido progress -->
+      <div class="modal fade" id="modalmodificarcontenidoprogress" ata-bs-backdrop="static" data-bs-keyboard="false"
+        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="modalmodificarcontenidoprogress">Edición contenido progress</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Editar contenido</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Guardar cambios</button>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
 
       <div class="progress" style="height: 30px;" role="progressbar" aria-label="Success striped example"
         aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
         <div class="progress-bar progress-bar-striped bg-success" style="width: 50%">CSS 50%</div>
       </div>
-      <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+      <!-- Button trigger modal modificar-->
+      <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalmodificarcontenidoprogress">
         <i class="fa-solid fa-pencil"></i>
-        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+
+        <!-- Button trigger modal eliminar-->
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modaleliminarcontenidoprogress">
           <i class="fa-solid fa-trash"></i>
-        </button><br>
+        </button>
 
         <div class="progress" style="height: 30px;" role="progressbar" aria-label="Info striped example"
           aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
           <div class="progress-bar progress-bar-striped bg-info" style="width: 10%">JAVASCRIPT 10%</div>
-        </div> 
-        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
-          <i class="fa-solid fa-pencil"></i>
-          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
-            <i class="fa-solid fa-trash"></i>
-          </button><br>
-
-        <!--Softs skills, habilidades blandas-->
-        <div class="soft-skills">Soft skills</div>
-        <div class="progress" style="height: 30px;" role="progressbar" aria-label="Default striped example"
-          aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-          <div class="progress-bar progress-bar-striped" style="width: 90%">Comunicación fluida y efectiva 90%</div>
-        </div> 
-        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
-          <i class="fa-solid fa-pencil"></i>
-          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
-            <i class="fa-solid fa-trash"></i>
-          </button><br>
-
-        <div class="progress" style="height: 30px;" role="progressbar" aria-label="Success striped example"
-          aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-          <div class="progress-bar progress-bar-striped bg-success" style="width: 80%">Autogestión</div>
         </div>
-         <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+        <!-- Button trigger modal modificar-->
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalmodificarcontenidoprogress">
           <i class="fa-solid fa-pencil"></i>
-          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
-            <i class="fa-solid fa-trash"></i>
-          </button><br>
 
-        <div class="progress" style="height: 30px;" role="progressbar" aria-label="Info striped example"
-          aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
-          <div class="progress-bar progress-bar-striped bg-info" style="width: 70%">Capacidad analítica 70%</div>
-        </div> 
-        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
-          <i class="fa-solid fa-pencil"></i>
-          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+          <!-- Button trigger modal eliminar-->
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modaleliminarcontenidoprogress">
             <i class="fa-solid fa-trash"></i>
-          </button><br>
+          </button>
+
+
+          <!--Softs skills, habilidades blandas-->
+          <p class="soft-skills" style="text-align: center">Soft skills</p>
+          <div class="progress" style="height: 30px;" role="progressbar" aria-label="Default striped example"
+            aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar progress-bar-striped" style="width: 90%">Comunicación fluida y efectiva 90%</div>
+          </div>
+          <!-- Button trigger modal modificar-->
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalmodificarcontenidoprogress">
+            <i class="fa-solid fa-pencil"></i>
+
+            <!-- Button trigger modal eliminar-->
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modaleliminarcontenidoprogress">
+              <i class="fa-solid fa-trash"></i>
+            </button>
+
+            <div class="progress" style="height: 30px;" role="progressbar" aria-label="Success striped example"
+              aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar progress-bar-striped bg-success" style="width: 80%">Autogestión</div>
+            </div>
+
+            <!-- Button trigger modal modificar-->
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalmodificarcontenidoprogress">
+              <i class="fa-solid fa-pencil"></i>
+
+              <!-- Button trigger modal eliminar-->
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modaleliminarcontenidoprogress">
+                <i class="fa-solid fa-trash"></i>
+              </button><br>
+
+              <div class="progress" style="height: 30px;" role="progressbar" aria-label="Info striped example"
+                aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar progress-bar-striped bg-info" style="width: 70%">Capacidad analítica 70% </div>
+              </div>
+              <!-- Button trigger modal modificar-->
+              <button type="button" class="btn" data-bs-toggle="modal"
+                data-bs-target="#modalmodificarcontenidoprogress">
+                <i class="fa-solid fa-pencil"></i>
+
+                <!-- Button trigger modal eliminar-->
+                <button type="button" class="btn" data-bs-toggle="modal"
+                  data-bs-target="#modaleliminarcontenidoprogress">
+                  <i class="fa-solid fa-trash"></i>
+                </button>
+
+
+
 
   </section>
 
@@ -579,11 +1133,62 @@
               <p class="card-text">Estructura estatica de mi primer Portfolio Web</p>
             </div>
           </div>
-          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+          <!-- Button trigger modal modificar-->
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalmodificarproyecto">
             <i class="fa-solid fa-pencil"></i>
-            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+
+            <!-- Button trigger modal eliminar-->
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modaleliminarproyecto">
               <i class="fa-solid fa-trash"></i>
             </button>
+
+
+            <!-- Modal eliminar proyecto-->
+            <div class="modal fade" id="modaleliminarproyecto" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Eliminar contenido</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      ¿Estas segur@ de eliminar el contenido?
+                    </label>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Guardar cambios</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Modal modificar proyecto-->
+            <div class="modal fade" id="modalmodificarproyecto" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Edición educación</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <label for="formFileSm" class="form-label">Agregar nueva imagen</label>
+                    <input class="form-control form-control-sm" id="formFileSm" type="file">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Editar contenido</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Guardar cambios</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
         </div>
 
         <div class="col">
@@ -594,12 +1199,19 @@
               <p class="card-text">Estructura estatica de mi primer Portfolio Web</p>
             </div>
           </div>
-          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+          <!-- Button trigger modal modififcar-->
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalmodificarproyecto">
             <i class="fa-solid fa-pencil"></i>
-            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+
+            <!-- Button trigger modal eliminar-->
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modaleliminarproyecto">
               <i class="fa-solid fa-trash"></i>
             </button>
+
+
         </div>
+
+
         <div class="col">
           <div class="card">
             <img src="asset/images/imagen 3 de mi portfolio.jpg.png" class="card-img-top" alt="...">
@@ -608,34 +1220,89 @@
               <p class="card-text">Estructura estatica de mi primer Portfolio Web</p>
             </div>
           </div>
-          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+          <!-- Button trigger modal modificar-->
+          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalmodificarproyecto">
             <i class="fa-solid fa-pencil"></i>
-            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+
+            <!-- Button trigger modal eliminar-->
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modaleliminarproyecto">
               <i class="fa-solid fa-trash"></i>
             </button>
+
+
         </div>
       </div>
+    </div>
   </section>
 
   <!--Fin de mis proyectos-->
 
+
   <!--Inicio de footer-->
   <footer>
-    <div>
-      <p>
-        <em>
-          <em>
-            <h5 style="text-align: center;">Johana</h5>
-          </em>
-          <h6 style="text-align: center;">Contacto: (343)-154470527</h6>
-        </em>
-        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
-          <i class="fa-solid fa-pencil"></i>
-          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
-            <i class="fa-solid fa-trash"></i>
-          </button>
-      </p>
-    </div>
+    <div class="footer">
+      <em>
+        <h5 style="text-align: center;">Johana</h5>
+      </em>
+      <em>
+        <h6 style="text-align: center;">Contacto: (343)-154470527</h6>
+      </em>
+
+      <!-- Button trigger modal modificar-->
+      <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalmodificarfooter">
+        <i class="fa-solid fa-pencil"></i>
+
+        <!-- Button trigger modal eliminar -->
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modaleliminarfooter">
+          <i class="fa-solid fa-trash"></i>
+        </button>
+
+        <!-- Modal eliminar footer-->
+        <div class="modal fade" id="modaleliminarfooter" tabindex="-1" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Eliminar contenido</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  ¿Estas segur@ de eliminar el contenido?
+                </label>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Guardar cambios</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <!-- Modal modificar contenido footer -->
+        <div class="modal fade" id="modalmodificarfooter" ata-bs-backdrop="static" data-bs-keyboard="false"
+          tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="modalmodificarfooter">Edición contenido footer</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label">Editar contenido</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Guardar cambios</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
   </footer>
   <!--Fin de footer-->
 

@@ -1,16 +1,24 @@
-
 /*INICIO NAVBAR*/
 .bg-navbar {
-    background-color: #0c0200;
+    background-color:#ffb69d;
 
+}
+
+.fa-brands:hover {
+    color: red;
+}
+
+.fa-solid:hover {
+    color: red;
 }
 
 .nav-link {
     color: white;
 }
+
 .nav-item {
- align-items:flex-end;
- width:50px;
+    align-items: flex-end;
+    width: 50px;
 }
 
 /*FIN NAVBAR*/
@@ -20,11 +28,12 @@
 .fondo {
     background-color: #dcdcdc;
 }
+
 .banner {
     position: relative;
     text-align: center;
 }
-  
+
 .banner img {
     width: 100%;
     filter: brightness(0.4);
@@ -32,26 +41,28 @@
 
 /*FIN BANNER*/
 
+/*INICIO DE PRESENTACIÓN*/
+.foto-p {
+    border-radius: 50%;
+}
+
+#presentacion {
+    background-color: #ffb69d;
+    padding-bottom: 10%;
+}
+
+/*FIN DE PRESENTACIÓN*/
 
 /*INICIO SOBRE MI*/
 
-.foto {
-    padding: 10%;
-    border-radius: 50%;
- }
-
-.sobremi {
-    background-color:#f3f4f6 ;
-
-}
-
-#titulo {
-    background-color: #0c0200;
+.info-sobremi {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    font-size: 20px;
 }
 
 .titulo-programadora h1,
 h2 {
-    font-family: 'Courier New', Courier, monospace;
     font-size: 50px;
 }
 
@@ -60,42 +71,48 @@ h2 {
 
 /*INICIO EDUCACIÓN*/
 #mi-educacion {
-    padding: 5%;
+    padding: 2%;
     background-color: #dcdcdc;
     text-align: center;
-   
+
 }
+
 .estudio-universitario {
-    padding-left: 30%;
+    padding-top: 2%;
+    padding-bottom: 5%;
 }
 
 
 /*FIN EDUCACIÓN*/
 
 
-/*MIS CURSOS*/
+/*INICIO DE MIS CURSOS*/
+
 #mis-cursos {
     padding: 2%;
     background-color: #ffb69d;
     text-align: center;
-    
+
 }
 
+/*FIN DE MIS CURSOS*/
 
 /*INICIO EXPERIENCIA LABORAL*/
+
 #experiencia-laboral {
-    padding: 10%;
-    background-color: #dcdcdc;
+    padding: 2%;
+    background-color: white;
     text-align: center;
- 
+
 }
 
 /*FIN EXPERIENCIA LABORAL*/
 
 
 /*INICIO FORMACION PROFESIONAL*/
+
 #formacion-profesional {
-    padding: 10%;
+    padding: 2%;
     background-color: #ffb69d;
 }
 
@@ -103,24 +120,25 @@ h2 {
 
 
 /*INICIO DE MIS HABILIDADES, HARD&SOFT SKILLS*/
-#progressbar {
-    padding:2%;
-}
 #progressbar h2 {
     text-align: center;
+    padding-bottom: 2%;
 }
+
+#progressbar {
+    background-color: #dcdcdc;
+    padding: 2%;
+}
+
 
 /*FIN DE MIS HABILIDADES, HARD&SOFT SKILLS*/
 
 
 /*INICIO DE PROYECTO*/
-#mi-proyecto {
-    padding: 10%;
-    background-color: #ffb69d;
-}
 
-#mi-proyecto h2 {
-    padding: 5px;
+#mi-proyecto {
+    padding: 2%;
+    background-color: #ffb69d;
 }
 
 /*FIN DE PROYECTO*/
